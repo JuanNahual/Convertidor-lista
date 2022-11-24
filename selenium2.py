@@ -15,14 +15,14 @@ os.rename('Filtro_ListaUNICA.xlsx','comparacion.xlsx')
 """
 """
 driver = webdriver.Chrome('./chromedriver')
-driver.get("https://comercios.gya.com.ar/filippo/cuenta/login")
+driver.get("")
 print(driver.title)
 search_bar = driver.find_element_by_name("usuario")
 search_bar.clear()
-search_bar.send_keys("Juan gomez")
+search_bar.send_keys("")
 search_bar = driver.find_element_by_name("password")
 
-search_bar.send_keys("12345678")
+search_bar.send_keys("")
 search_bar.send_keys(Keys.RETURN)
 print(driver.current_url)
 
